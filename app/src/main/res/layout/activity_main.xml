@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:layout_gravity="center_horizontal"
+                android:padding="24dp">
+
+    <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REJESTRACJA"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="30sp"/>
+    <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Utworz nowe konto"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="17sp"/>
+
+    <TextView
+            android:id="@+id/imieT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginTop="30dp"
+            android:text="Imie" />
+
+    <EditText
+            android:id="@+id/imieE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="6dp"
+            android:hint="Wpisz imie"
+            android:inputType="text" />
+
+    <TextView
+            android:id="@+id/nazwiskoT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:text="Nazwisko" />
+
+    <EditText
+            android:id="@+id/nazwiskoE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Wpisz nazwisko"
+            android:layout_marginTop="6dp"
+            android:inputType="text" />
+
+    <TextView
+            android:id="@+id/emailT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="Email" />
+
+    <EditText
+            android:id="@+id/emailE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Wpisz E-mail"
+            android:layout_marginTop="6dp"
+            android:inputType="textEmailAddress" />
+
+    <TextView
+            android:id="@+id/passT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:text="Haslo" />
+
+    <EditText
+            android:id="@+id/passE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Wpisz haslo"
+            android:layout_marginTop="6dp"
+            android:inputType="textPassword" />
+
+    <Button
+            android:text="ZAREJESTRUJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/button"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp"/>
+    <TextView
+            android:id="@+id/msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Autor:Illia Zaichenko" />
+
+</LinearLayout>
