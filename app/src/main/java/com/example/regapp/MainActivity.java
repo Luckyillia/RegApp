@@ -125,11 +125,12 @@ public class MainActivity extends AppCompatActivity {
         try {
             // Otwórz strumień wyjściowy do pliku w pamięci wewnętrznej
             fos = openFileOutput(FILE_NAME, MODE_PRIVATE);
-
+            String text = "Imie: "+args[0]+"\n"
+                    +"Nazwisko: "+args[1]+"\n"
+                    +"Email: "+args[2]+"\n"
+                    +"Haslo: "+args[3]+"\n";
             // Zapisz tekst jako tablicę bajtów
-            for (int i = 0; i < args.length; i++) {
-                fos.write(args[i].getBytes());
-            }
+            fos.write(text.getBytes());
 
             Toast.makeText(this, "Zapisano do pliku " + FILE_NAME, Toast.LENGTH_SHORT).show();
         } catch (Exception e) {
@@ -160,7 +161,7 @@ public class MainActivity extends AppCompatActivity {
                 stringBuilder.append(line).append("\n");
             }
 
-            msg.setText(stringBuilder.toString());
+            lastUser.setText(stringBuilder.toString());
             Toast.makeText(this, "Wczytano z pliku " + FILE_NAME, Toast.LENGTH_SHORT).show();
         } catch (Exception e) {
             e.printStackTrace();
