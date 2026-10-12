@@ -33,7 +33,7 @@
             android:text="Imie" />
 
     <EditText
-            android:id="@+id/imieE"
+            android:id="@+id/nameE"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -51,7 +51,7 @@
             android:text="Nazwisko" />
 
     <EditText
-            android:id="@+id/nazwiskoE"
+            android:id="@+id/surnameE"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -105,6 +105,22 @@
             android:textSize="18sp"/>
     <TextView
             android:id="@+id/msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Autor:Illia Zaichenko" />
+
+    <Button
+            android:text="WCZYTAJ DANE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/loadUser"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp"/>
+
+    <TextView
+            android:id="@+id/lastUser"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
